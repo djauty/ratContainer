@@ -25,7 +25,7 @@ The tag (in the above command, `ubuntu`) can be replaced with the desired tag.
 **If on your own local machine**, Docker should be used as it is easier to install (on linux I found apptainer to be easier to install).
 The command to obtain the latest version of the container for Docker is:
 ```
-docker pull snoplus/djauty/ratcontainer:ubuntu
+docker pull djauty/ratcontainer:ubuntu
 ```
 The tag (in the above command, `ubuntu`) can be replaced with the desired tag.
 
