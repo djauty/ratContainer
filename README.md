@@ -14,8 +14,9 @@ will need to run the command below to choose the default version
 ```
 module load apptainer
 ```
-Apptainer should be available so use the following command to obtain the latest
-version of the container:
+You will need to not call any other modules as some interfer with Apptainer. This means make sure your 
+.bashrc file doesn't call any extra software. Apptainer should be available so use the following command 
+to obtain the latest version of the container:
 ```
 apptainer pull --name rat-container.sif docker://djauty/ratcontainer:ubuntu
 ```
@@ -73,9 +74,12 @@ This difference doesn't have an effect on how the container is actually used.
  
  ```
  make -f makefile.version
+ ./configure
+ scons -c
  make -f makefile.rat
  ```
 - RAT is now ready to use! Look at the instructions below for how to run it
+- After the first build you can just use scons
 
 ***
 **To exit the container (Apoptainer and Docker)**:
