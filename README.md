@@ -73,9 +73,9 @@ This difference doesn't have an effect on how the container is actually used.
   - Finally, run these commands in the rat folder to build RAT:
  
  ```
- make -f makefile.version
- ./configure
+  ./configure
  scons -c
+ make -f makefile.version
  make -f makefile.rat
  ```
 - RAT is now ready to use! Look at the instructions below for how to run it
