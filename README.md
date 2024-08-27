@@ -78,6 +78,12 @@ This difference doesn't have an effect on how the container is actually used.
  make -f makefile.version
  make -f makefile.rat
  ```
+- Sometimes it fails to compile if this happens try
+```
+make -f makefile.rat undo
+```
+which undoes all the previous steps and brings you back to "normal" scons **starting** point
+and then repeat the previous steps
 - RAT is now ready to use! Look at the instructions below for how to run it
 - After the first build you can just use scons
 
